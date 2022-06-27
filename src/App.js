@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import UseStateDemo from "./Component/UseState/UseStateDemo";
+import UseStateObject from "./Component/UseState/UseStateObject";
+import UseStateArray from "./Component/UseState/UseStateArray";
+import UseEffectDemo from "./Component/UseEffect/UseEffectDemo";
+import UseEffectCleanUp from "./Component/UseEffect/UseEffectCleanUp";
+import UseRef from "./Component/UseRef/UseRef";
+import UseReducer from "./Component/UseReducer/UseReducer";
+import Home from "./Component/UseLocation/home";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <UseStateDemo/>
+      <UseStateObject/>
+      <UseStateArray/>
+      <UseEffectDemo/>
+      <UseEffectCleanUp/>
+      <UseRef/>
+      <UseReducer/>
+      <Home/>
     </div>
   );
 }
